@@ -4,6 +4,7 @@ const Product = require('../models/productModel');
 const createProduct = async (req, res) => {
     try {
         const product = new Product(req.body);
+        console.log(product)
         await product.save();
         res.status(201).json(product);
     } catch (error) {
@@ -25,19 +26,19 @@ const getProducts = async (req, res) => {
 
         // Filter by category
         if (category) {
-            query.category = category;
+            query.category = { $regex: new RegExp(`^${category}$`, 'i') };  // Case-insensitive match
         }
 
         // Filter by brand
         if (brand) {
-            query.brand = brand;
+            query.brand = { $regex: new RegExp(`^${brand}$`, 'i') };  // Case-insensitive match
         }
 
         // Filter by price range
         if (minPrice || maxPrice) {
             query.price = {};
-            if (minPrice) query.price.$gte = minPrice;
-            if (maxPrice) query.price.$lte = maxPrice;
+            if (minPrice) query.price.$gte = parseFloat(minPrice);
+            if (maxPrice) query.price.$lte = parseFloat(maxPrice);
         }
 
         // Sorting
@@ -56,6 +57,7 @@ const getProducts = async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 };
+
 
 // Get a single product by ID
 const getProductById = async (req, res) => {

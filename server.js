@@ -13,7 +13,7 @@ const cookieParser = require("cookie-parser");
 // middlewares
 app.use(cors({
     origin: [
-        "https://tietheknot-3a6f0.web.app",
+        "https://shop-smart-1.netlify.app",
         "http://localhost:5173"
     ],
     credentials: true,
