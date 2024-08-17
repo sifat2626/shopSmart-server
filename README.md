@@ -19,8 +19,6 @@ This is the backend of the **ShopSmart** project, a full-stack e-commerce websit
 - **Firebase**: Authentication for Google and Email/Password login.
 
 
-
-- **GET /api/products**: Get all products with pagination, searching, filtering, and sorting.
 - **GET /api/products/:id**: Get a single product by ID.
 - **POST /api/products**: Create a new product.
 - **PUT /api/products/:id**: Update a product by ID.
