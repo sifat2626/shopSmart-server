@@ -16,7 +16,6 @@ This is the backend of the **ShopSmart** project, a full-stack e-commerce websit
 - **Express.js**: Web framework for building APIs.
 - **MongoDB**: NoSQL database for storing product data.
 - **Mongoose**: ODM (Object Data Modeling) library for MongoDB.
-- **Firebase**: Authentication for Google and Email/Password login.
 
 - **PUT /api/products/:id**: Update a product by ID.
 - **DELETE /api/products/:id**: Delete a product by ID.
