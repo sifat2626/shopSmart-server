@@ -18,7 +18,6 @@ This is the backend of the **ShopSmart** project, a full-stack e-commerce websit
 - **Mongoose**: ODM (Object Data Modeling) library for MongoDB.
 - **Firebase**: Authentication for Google and Email/Password login.
 
-- **POST /api/products**: Create a new product.
 - **PUT /api/products/:id**: Update a product by ID.
 - **DELETE /api/products/:id**: Delete a product by ID.
 
