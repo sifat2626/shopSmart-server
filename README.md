@@ -18,46 +18,6 @@ This is the backend of the **ShopSmart** project, a full-stack e-commerce websit
 - **Mongoose**: ODM (Object Data Modeling) library for MongoDB.
 - **Firebase**: Authentication for Google and Email/Password login.
 
-## Getting Started
-
-### Prerequisites
-
-- **Node.js** installed on your machine.
-- **MongoDB** installed and running locally or use a cloud MongoDB service like MongoDB Atlas.
-
-### Installation
-
-1. **Clone the repository:**
-
-    ```bash
-    git clone https://github.com/yourusername/shopsmart-backend.git
-    cd shopsmart-backend
-    ```
-
-2. **Install dependencies:**
-
-    ```bash
-    npm install
-    ```
-
-3. **Create a `.env` file in the root directory with the following content:**
-
-    ```plaintext
-    PORT=5000
-    MONGO_URI=mongodb://localhost:27017/shopsmart
-    FIREBASE_API_KEY=your_firebase_api_key
-    FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
-    ```
-
-4. **Run the server:**
-
-    ```bash
-    npm start
-    ```
-
-   The server will start on `http://localhost:5000`.
-
-### API Endpoints
 
 #### Product Routes
 
