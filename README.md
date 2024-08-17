@@ -17,7 +17,6 @@ This is the backend of the **ShopSmart** project, a full-stack e-commerce websit
 - **MongoDB**: NoSQL database for storing product data.
 - **Mongoose**: ODM (Object Data Modeling) library for MongoDB.
 
-- **DELETE /api/products/:id**: Delete a product by ID.
 
 ### Example Requests
 
